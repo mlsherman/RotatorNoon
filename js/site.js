@@ -1,6 +1,6 @@
 function getText() {
 
-    document.getElementById("alert").classList.add("invisible")
+    document.getElementById("alert").classList.add("invisible");
 
     let str = document.getElementById("input").value
     let returnObj = palindrome(str)
@@ -33,10 +33,10 @@ function palindrome(str) {
    return returnObj;
 }
 
-function displayText() {
+function displayText(returnObj) {
 
-    document.getElementById("results").innerHTML = returnObj.msg
-    document.getElementById("msg").innerHTML = `Your phrase reversed is: ${returnObj.reverseStr}`;
+    document.getElementById("alertHeader").innerHTML = returnObj.msg
+    document.getElementById("msg").innerHTML = `Your phrase reversed is: ${returnObj.reversed}`;
     document.getElementById("alert").classList.remove("invisible");
     
 }
